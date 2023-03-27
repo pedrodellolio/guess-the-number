@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adivinhe o Número</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form onsubmit="guessNumber()" method="POST" class="container">
+      <label>Digite um número de 0 a 100</label>
+      <input type="number" name="guess" class="guessInput" required />
+
+      <button type="submit" id="check" class="button">Checar</button>
+    </form>
+
+    <button onclick="loadGame()" class="button reset">Reiniciar</button>
+    <div class="result">O número secreto é maior que X</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
